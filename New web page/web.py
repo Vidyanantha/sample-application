@@ -3,7 +3,9 @@ app=Flask(__name__)
 
 @app.route("/")
 def Homepage():
-    return render_template("loginpage.html")
+    return render_template("homepage.html")
+
+
 
 @app.route("/profile" , methods=["GET","POST"])
 def edit():
