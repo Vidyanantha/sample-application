@@ -5,6 +5,10 @@ app=Flask(__name__)
 def Homepage():
     return render_template("loginpage.html")
 
+@app.route("/table")
+def table():
+    return render_template("table.html")
+
 @app.route("/profile" , methods=["GET","POST"])
 def edit():
     username=request.form["User_Name"]
